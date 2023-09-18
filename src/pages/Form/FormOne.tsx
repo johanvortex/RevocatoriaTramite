@@ -576,10 +576,56 @@ const FormOne = () => {
 
 
                 </div>
+                <h3 className="mt-6">Adjuntar documentos</h3>
 
+                <div className='mt-8'>
+                    <h3 className="mt-6">Carta de solicitud de trámite *
+                    </h3>
+                    <h4 className="decoration-sky-500">Debe ingresar la carta de solicitud de trámite
+                        Tipo de archivo permitido: .doc, .docx, .pdf hasta de 1Mb</h4>
+                    <input type="file" className="file-input file-input-bordered file-input-info w-full max-w-xs" />
+
+                </div>
+                <div className='mt-8'>
+                    <h3 className="mt-6">Documento de identidad del solicitante *
+                    </h3>
+                    <h4 className="decoration-sky-500">Debe ingresar la carta de solicitud de trámite
+                        Tipo de archivo permitido: .doc, .docx, .pdf hasta de 1Mb</h4>
+                    <input type="file" className="file-input file-input-bordered file-input-info w-full max-w-xs" />
+
+                </div>
+                <div className='mt-8'>
+                    <h3 className="mt-6">Estudio de valoración *
+                    </h3>
+                    <h4 className="decoration-sky-500">Debe ingresar la carta de solicitud de trámite
+                        Tipo de archivo permitido: .doc, .docx, .pdf hasta de 1Mb</h4>
+                    <input type="file" className="file-input file-input-bordered file-input-info w-full max-w-xs" />
+
+                </div>
+                <div className='mt-8'>
+                    <h3 className="mt-6">Planos originales
+                    </h3>
+                    <h4 className="decoration-sky-500">Debe ingresar la carta de solicitud de trámite
+                        Tipo de archivo permitido: .doc, .docx, .pdf hasta de 1Mb</h4>
+                    <input type="file" className="file-input file-input-bordered file-input-info w-full max-w-xs" />
+
+                </div>
+                <div className='mt-8'>
+                    <h3 className="mt-6">Licencia de construcción original
+                    </h3>
+                    <h4 className="decoration-sky-500">Debe ingresar la carta de solicitud de trámite
+                        Tipo de archivo permitido: .doc, .docx, .pdf hasta de 1Mb</h4>
+                    <input type="file" className="file-input file-input-bordered file-input-info w-full max-w-xs" />
+                </div>
+                <div className='mt-8'>
+                    <h3 className="mt-6">Registro fotográfico interior y exterior *
+                    </h3>
+                    <h4 className="decoration-sky-500">Debe ingresar la carta de solicitud de trámite
+                        Tipo de archivo permitido: .doc, .docx, .pdf hasta de 1Mb</h4>
+                    <input type="file" className="file-input file-input-bordered file-input-info w-full max-w-xs" />
+                </div>
             </div>
         </div>
-
     </>)
 }
 
