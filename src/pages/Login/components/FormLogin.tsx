@@ -22,9 +22,7 @@ const FormLogin = () => {
     <>
       <div className="card w-96 bg-base-100 shadow-xl">
         <h2
-          className="card-title flex justify-center font-HelveticaNowTextBlack text-2xl
-"
-        >
+          className="card-title flex justify-center font-HelveticaNowTextBlack text-2xl">
           Inicio de sesión
         </h2>
         <div className="m-2 p-3">
