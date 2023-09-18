@@ -405,11 +405,177 @@ const FormOne = () => {
                     <div className='flex items-start flex-col my-3'>
                         <label htmlFor="">Vereda
                         </label>
-                        <TextField id="outlined-basic" variant="outlined" size="small"
-                        />
+                        <FormControl sx={{ m: 1, width: 300 }} size='small'>
+                            <TextField id="outlined-basic" variant="outlined" size="small"
+                            />
+
+                        </FormControl>
                     </div>
                 </div>
+                <h3 className="mt-6">Descripción del bien</h3>
+                <div className="grid grid-cols-2 " >
+                    <div className='flex items-start flex-col my-3'>
+                        <label htmlFor="">Área del predio en metros cuadrados
+                        </label>
+                        <FormControl sx={{ m: 1, width: 300 }} size='small'>
+                            <TextField id="outlined-basic" variant="outlined" size="small"
+                            />
 
+                        </FormControl>
+                    </div>
+                    <div className='flex items-start flex-col my-3'>
+                        <label htmlFor="">Área construida en metros cuadrados
+                        </label>
+                        <FormControl sx={{ m: 1, width: 300 }} size='small'>
+                            <TextField id="outlined-basic" variant="outlined" size="small"
+                            />
+
+                        </FormControl>
+                    </div>
+                    <div className='flex items-start flex-col my-3'>
+                        <label htmlFor="">Número de pisos
+                        </label>
+                        <FormControl sx={{ m: 1, width: 300 }} size='small'>
+                            <TextField id="outlined-basic" variant="outlined" size="small"
+                            />
+
+                        </FormControl>
+                    </div>
+                    <div className='flex items-start flex-col my-3'>
+                        <label htmlFor="">Uso original
+                        </label>
+                        <FormControl sx={{ m: 1, width: 300 }} size='small'>
+                            <TextField id="outlined-basic" variant="outlined" size="small"
+                            />
+
+                        </FormControl>
+                    </div>
+                    <div className='flex items-start flex-col my-3'>
+                        <label htmlFor="">Otro uso
+                        </label>
+                        <FormControl sx={{ m: 1, width: 300 }} size='small'>
+                            <TextField id="outlined-basic" variant="outlined" size="small"
+                            />
+
+                        </FormControl>
+                    </div>
+                    <div className='flex items-start flex-col my-3'>
+                        <label htmlFor="">Uso actual
+                        </label>
+                        <FormControl sx={{ m: 1, width: 300 }} size='small'>
+                            <TextField id="outlined-basic" variant="outlined" size="small"
+                            />
+
+                        </FormControl>
+                    </div>
+                    <div className='flex items-start flex-col my-3'>
+                        <label htmlFor="">Año de construcción
+                        </label>
+                        <FormControl sx={{ m: 1, width: 300 }} size='small'>
+                            <TextField id="outlined-basic" variant="outlined" size="small"
+                            />
+
+                        </FormControl>
+                    </div>
+                    <div className='flex items-start flex-col my-3'>
+                        <label htmlFor="">Arquitecto del diseño o construcción original
+                        </label>
+                        <FormControl sx={{ m: 1, width: 300 }} size='small'>
+                            <TextField id="outlined-basic" variant="outlined" size="small"
+                            />
+
+                        </FormControl>
+                    </div>
+                    <div className='flex items-start flex-col my-3'>
+                        <label htmlFor="">Licencia de construcción original
+                        </label>
+                        <FormControl sx={{ m: 1, width: 300 }} size='small'>
+                            <TextField id="outlined-basic" variant="outlined" size="small"
+                            />
+
+                        </FormControl>
+                    </div>
+                    <div className='flex items-start flex-col my-3'>
+                        <label htmlFor="">Otras licencias que haya tenido el inmueble (autorizaciones o permisos para intervención)
+                        </label>
+                        <FormControl sx={{ m: 1, width: 300 }} size='small'>
+                            <TextField id="outlined-basic" variant="outlined" size="small"
+                            />
+
+                        </FormControl>
+                    </div>
+                    <div className='flex items-start flex-col my-3'>
+                        <label htmlFor="">Acto administrativo por el cual se declaró el bien
+                        </label>
+                        <FormControl sx={{ m: 1, width: 300 }} size='small'>
+                            <TextField id="outlined-basic" variant="outlined" size="small"
+                            />
+
+                        </FormControl>
+                    </div>
+                    <div className='flex items-start flex-col my-3'>
+                        <label htmlFor="">Indique aquí la razón principal de la solicitud
+                        </label>
+                        <FormControl sx={{ m: 1, width: 300 }} size='small'>
+                            <TextField id="outlined-basic" variant="outlined" size="small"
+                            />
+
+                        </FormControl>
+                    </div>
+                    <div className='flex items-start flex-col my-3'>
+                        <label htmlFor="">Seleccione los criterios de valoración que considere permiten dar valor al bien
+                        </label>
+                        <FormControl sx={{ m: 1, width: 300 }} size='small'>
+                            <Select
+                                labelId="demo-multiple-name-label"
+                                id="demo-multiple-name"
+                                multiple
+                                value={personName}
+                                onChange={handleChange}
+                                input={<OutlinedInput label="Name" />}
+                                MenuProps={MenuProps}
+                            >
+                                {data.map((name) => (
+                                    <MenuItem
+                                        key={name}
+                                        value={name}
+                                        style={getStyles(name, personName, theme)}
+                                    >
+                                        {name}
+                                    </MenuItem>
+                                ))}
+                            </Select>
+                        </FormControl>
+                    </div>
+                    <div className='flex items-start flex-col my-3'>
+                        <label htmlFor="">Seleccione los valores que considere son atributos al bien
+                        </label>
+                        <FormControl sx={{ m: 1, width: 300 }} size='small'>
+                            <Select
+                                labelId="demo-multiple-name-label"
+                                id="demo-multiple-name"
+                                multiple
+                                value={personName}
+                                onChange={handleChange}
+                                input={<OutlinedInput label="Name" />}
+                                MenuProps={MenuProps}
+                            >
+                                {data.map((name) => (
+                                    <MenuItem
+                                        key={name}
+                                        value={name}
+                                        style={getStyles(name, personName, theme)}
+                                    >
+                                        {name}
+                                    </MenuItem>
+                                ))}
+                            </Select>
+                        </FormControl>
+                    </div>
+
+
+
+                </div>
 
             </div>
         </div>
