@@ -1,10 +1,14 @@
 import "./App.css";
+import FormOne from "./pages/Form/FormOne";
+import MainLayout from "./shared/components/mainLayout";
 
-const App = () =>{
+const App = () => {
 
   return (
     <>
-      <h1 className="text-3xl font-bold underline">Dapnia</h1>
+      <MainLayout >
+      <FormOne></FormOne>
+      </MainLayout>
     </>
   );
 }
